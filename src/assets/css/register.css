@@ -1,0 +1,7 @@
+.input,.button,.notification{
+    border-radius: 15px;
+}
+.button{
+    display: block;
+    margin: 0 auto;
+}

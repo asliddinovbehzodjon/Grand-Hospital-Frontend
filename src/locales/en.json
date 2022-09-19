@@ -1,0 +1,24 @@
+{
+  "message": "hello i18n !!",
+  "home":"Home",
+  "news":"News",
+  "language":"Language",
+  "register":"Register",
+  "login":"Login",
+  "inputname":"Enter your name",
+  "password":"Enter password",
+  "repeatpassword":"Repeat password",
+  "phone":"Enter phone number",
+  "doctor":"Doctors",
+  "appointment":"Enrollment",
+  "previous":"Previous",
+  "next":"Next",
+  "profession":"Field",
+  "address":"Adress",
+  "lavozim":"Position",
+  "phonenum":"Phone number",
+  "start":"Start","status":"Status",
+  "book":"Enrollment",
+  "logout":"Logout"
+
+}

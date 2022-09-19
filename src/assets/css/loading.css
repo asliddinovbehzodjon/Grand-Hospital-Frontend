@@ -1,0 +1,19 @@
+*{
+    background: none;
+}
+.loading {
+    position: relative;
+    z-index: 1000;
+    background-color: white;
+    height:100%;
+    width: 100%;
+    text-align: center;
+    line-height: 100vh;
+  }
+  
+ .loading .img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }

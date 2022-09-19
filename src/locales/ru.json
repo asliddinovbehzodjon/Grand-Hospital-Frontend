@@ -1,0 +1,25 @@
+{
+    "message": "hello i18n !!",
+    "home":"Главный",
+    "news":"Новости",
+    "language":"Язык",
+    "register":"Регистрация",
+    "login":"Bход",
+    "inputname":"Введите ваше и мя",
+    "password":"Введите пароль",
+    "repeatpassword":"Повторите пароль",
+    "phone":"Введите номер телефона",
+    "doctor":"Врачи",
+    "appointment":"Регистрация",
+    "previous":"Назад",
+    "next": "Вперед",
+    "profession":"Поле",
+    "address":"Адрес",
+    "lavozim":"Должность",
+    "phonenum":"Номер телефона",
+    "start":"Начинать",
+    "status":"Статус",
+    "book":"Регистрация",
+    "logout":"Выйти"
+    
+  }

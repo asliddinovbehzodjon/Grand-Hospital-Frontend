@@ -1,30 +1,44 @@
 <template>
+  <Loading v-if="loading" />
+ <div v-if="!loading">
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <navbar></navbar>
   </nav>
-  <router-view/>
+  <router-view :key="$route.fullPath" />
+ </div>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+@import '../node_modules/bulma'
+</style>
+<script>
+  import axios from 'axios'
+  import Navbar from './components/Navbar.vue'
+  import Loading from '@/components/Loading.vue'
+  export default{
+    name:'App',
+    data(){
+      return{
+        loading:true,
+      }
+    },
+    beforeCreate(){
+      this.$store.commit('InitializeStore')
+      if(localStorage.getItem('token')){
+         let token = localStorage.getItem('token')
+         axios.defaults.headers.common['Authorization'] = 'Token '+token
+      }
+      else{
+        axios.defaults.headers.common['Authorization'] = ''
+      }
+    },
+    components:{
+     Navbar,Loading
+    },
+    mounted(){
+      setTimeout(()=>{
+        this.loading=false;
+      },1500)
     }
   }
-}
-</style>
+</script>
