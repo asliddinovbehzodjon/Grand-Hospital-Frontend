@@ -30,7 +30,7 @@
 
                   </div>
                   <div class="field ">
-                    <button class="button is-success">{{$t('register')}}</button>
+                    <button class="button is-danger">{{$t('register')}}</button>
                   </div>
             </form>
         </div>

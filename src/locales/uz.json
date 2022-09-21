@@ -20,5 +20,7 @@
   "start":"Vaqt",
   "status":"Holat",
   "book":"Qabulga yozilish",
-  "logout":"Chiqish"
+  "logout":"Chiqish",
+  "Search":"Qidirish...",
+  "search":"Qidirish"
   }

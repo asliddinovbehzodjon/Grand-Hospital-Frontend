@@ -1,7 +1,9 @@
 <template>
-    <div class="has-text-centered mt-3 mb-3">
-        <h1 class="title first">{{$t('doctor')}}</h1>
-    
+    <div class="has-text-centered mt-3 mb-3 searchbar">
+        <form @submit.prever="SubmitMe">
+          <input type="text" class="search" name="" id="" v-bind:placeholder="$t('Search')" required>
+        <button class="searchbtn">{{$t('search')}}</button>
+        </form>
     </div>
     <div class="container">
       <div class="columns is-multiline">
@@ -16,20 +18,20 @@
             <div class="card-content">
               <h2 class="has-text-centered mt-3 mb-3 name">{{doctor.fullname}}</h2>
             <div class="adress">
-              <i class="fa-solid fa-location-dot" style="color:#2CEA99"></i> {{$t('address')}} : {{doctor.address}}
+              <i class="fa-solid fa-location-dot" style="color:#2CEA99"></i>  &nbsp;{{$t('address')}} : {{doctor.address}}
             </div>
             <div class="position">
-              <i class="fa-solid fa-user-doctor" style="color:#50D5EA"></i> {{$t('lavozim')}}: {{doctor.job}}
+              <i class="fa-solid fa-user-doctor" style="color:#50D5EA"></i>  &nbsp;{{$t('lavozim')}}: {{doctor.job}}
             </div>
             <div class="phone">
-              <i class="fa-solid fa-phone" style="color:red;"></i> {{$t('phonenum')}}: {{doctor.phone}}
+              <i class="fa-solid fa-phone" style="color:red;"></i>&nbsp; {{$t('phonenum')}}: {{doctor.phone}}
             </div>
           
              
             </div>
             <footer class="card-footer">
               
-              <router-link :to="{name:'doctor-about',params:{id:doctor.id}}" class="card-footer-item"><i class="fa-solid fa-calendar-check"></i> &nbsp{{ $t('appointment')}}</router-link>
+              <router-link :to="{name:'doctor-about',params:{id:doctor.id}}" class="card-footer-item"><i class="fa-solid fa-calendar-check" style="color:crimson"></i> &nbsp{{ $t('appointment')}}</router-link>
               </footer>
               <div class="badge">{{doctor.profession}}</div>
           </div>

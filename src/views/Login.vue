@@ -23,7 +23,7 @@
 
                   </div>
                   <div class="field ">
-                    <button class="button is-success">{{$t('login')}}</button>
+                    <button class="button is-danger">{{$t('login')}}</button>
                   </div>
             </form>
         </div>

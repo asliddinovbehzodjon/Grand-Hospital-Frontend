@@ -19,6 +19,8 @@
   "phonenum":"Phone number",
   "start":"Start","status":"Status",
   "book":"Enrollment",
-  "logout":"Logout"
+  "logout":"Logout",
+  "Search":"Search...",
+  "search":"Search"
 
 }
