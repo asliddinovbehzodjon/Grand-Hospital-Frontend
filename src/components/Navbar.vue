@@ -16,9 +16,9 @@
       
         <div id="navbarBasicExample" class="navbar-menu" v-bind:class="{'is-active':isopen}">
           <div class="navbar-start">
-            <a href="/" class="navbar-item">
+            <router-link to="/" class="navbar-item">
             {{ $t('home')}}
-            </a>
+            </router-link>
       
             <a class="navbar-item">
               {{$t('news')}}
