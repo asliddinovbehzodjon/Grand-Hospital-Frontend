@@ -124,7 +124,7 @@ import axios from 'axios';
           searchprevious:"",
           searchcurrent_page_num:'',
           searchcount:'',
-          url:'http://127.0.0.1:8000'
+          url:'https://grandhospital.pythonanywhere.com'
         }
       },
       methods:{
