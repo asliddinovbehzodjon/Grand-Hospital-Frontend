@@ -2,7 +2,7 @@
     <div class="loading">
         <img
           class="image"
-          src="../assets/load.gif"
+          src="../assets/loading.gif"
           alt="loading..." 
           
         />

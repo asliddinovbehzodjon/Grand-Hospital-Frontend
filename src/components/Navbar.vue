@@ -1,6 +1,6 @@
 <template>
    
-    <nav class="navbar is-success" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-success " style="border-radius: 15px;" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <router-link to='/' class="navbar-item">
             <img src="../assets/images/logos.png" class="logo">
@@ -26,7 +26,7 @@
       
             <div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link">
-               {{$t('language')}}
+                <i class="fa-solid fa-language" style="font-size:20px"></i> &nbsp {{$t('language')}}
               </a>
       
               <div class="navbar-dropdown">
@@ -47,13 +47,13 @@
           <div class="navbar-end">
             <div class="navbar-item">
               <div class="buttons">
-                <router-link to="/register" v-if="!$store.state.isAuthenticated" class="button is-primary">
+                <router-link to="/register" style="border-radius: 15px;" v-if="!$store.state.isAuthenticated" class="button is-primary">
                   <strong>{{$t('register')}}</strong>
                 </router-link>
-                <router-link to="login"  v-if="!$store.state.isAuthenticated" class="button is-light">
+                <router-link to="login" style="border-radius: 15px;"  v-if="!$store.state.isAuthenticated" class="button is-light">
                  {{$t('login')}}
                 </router-link>
-                <a @click="Logout"  v-if="$store.state.isAuthenticated" class="button is-danger">
+                <a @click="Logout" style="border-radius: 15px;"  v-if="$store.state.isAuthenticated" class="button is-danger">
                   {{$t('logout')}}
                  </a>
               </div>

@@ -4,10 +4,10 @@
     
     </div>
     <div class="container">
-     <div class="mycards">
-        <div class="card" v-for="doctor in doctors" :key="doctor.id">
+      <div class="columns is-multiline">
+     <div class="column is-3" v-for="doctor in doctors" :key="doctor.id">
+        <div class="card"  >
             <div class="card-image">
-              <!-- <figure class="image"> -->
                 <center>
                   <img :src="doctor.image" alt="Placeholder image">
                 </center>
@@ -16,20 +16,20 @@
             <div class="card-content">
               <h2 class="has-text-centered mt-3 mb-3 name">{{doctor.fullname}}</h2>
             <div class="adress">
-              📍 {{$t('address')}} : {{doctor.address}}
+              <i class="fa-solid fa-location-dot" style="color:#2CEA99"></i> {{$t('address')}} : {{doctor.address}}
             </div>
             <div class="position">
-              👨‍⚕️ {{$t('lavozim')}}: {{doctor.job}}
+              <i class="fa-solid fa-user-doctor" style="color:#50D5EA"></i> {{$t('lavozim')}}: {{doctor.job}}
             </div>
             <div class="phone">
-              📞 {{$t('phonenum')}}: {{doctor.phone}}
+              <i class="fa-solid fa-phone" style="color:red;"></i> {{$t('phonenum')}}: {{doctor.phone}}
             </div>
           
              
             </div>
             <footer class="card-footer">
               
-              <router-link :to="{name:'doctor-about',params:{id:doctor.id}}" class="card-footer-item">{{$t('appointment')}}</router-link>
+              <router-link :to="{name:'doctor-about',params:{id:doctor.id}}" class="card-footer-item"><i class="fa-solid fa-calendar-check"></i> &nbsp{{ $t('appointment')}}</router-link>
               </footer>
               <div class="badge">{{doctor.profession}}</div>
           </div>
@@ -38,7 +38,7 @@
          
      </div>
 
-       
+    </div>
     </div>
    <div class="container mt-3 mb-3 ">
    <center>
