@@ -38,9 +38,10 @@
                             {{drug.price}} so'm
                         </td>
                         <td class="qty">
-                            <span @click="AddQty(drug.id)"><i class="fa-solid fa-plus"></i></span>
-                            <span style="font-size:15px;font-weight:600">{{drug.qty}}</span>
                             <span @click="RemoveQty(drug.id)"><i class="fa-solid fa-minus"></i></span>
+                            <span style="font-size:15px;font-weight:600">{{drug.qty}}</span>
+                            <span @click="AddQty(drug.id)"><i class="fa-solid fa-plus"></i></span>
+                            
                         </td>
                     </tr>
                    
