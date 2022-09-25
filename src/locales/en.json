@@ -21,6 +21,14 @@
   "book":"Enrollment",
   "logout":"Logout",
   "Search":"Search...",
-  "search":"Search"
+  "search":"Search",
+  "drug":"Online Pharmacy",
+  "expiration":"Validity period:",
+  "description":"About",
+  "found":"Drugs found on request",
+  "name":"Enter your name",
+  "shop":"Shopping",
+  "empty":"Empty",
+  "price":"Price"
 
 }

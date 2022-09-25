@@ -23,6 +23,7 @@
             <a class="navbar-item">
               {{$t('news')}}
             </a>
+            <router-link  class="navbar-item" to='/drug'><i class="fa-solid fa-capsules"></i> &nbsp{{$t('drug')}}</router-link>
       
             
           </div>
@@ -47,6 +48,9 @@
                  
                 </div>
               </div>
+              <router-link to="/drug-accept" ><i class="fa-regular fa-heart"><span class="heart-count">
+                {{mycount}}
+              </span></i> &nbsp;</router-link>
               <div class="buttons">
                 <router-link to="/register" style="border-radius: 15px;" v-if="!$store.state.isAuthenticated" class="button is-light">
                   <strong>{{$t('register')}}</strong>
@@ -73,6 +77,13 @@ import axios from 'axios'
           return{
             isopen:false,
           }
+        },
+        computed:{
+      mycount(){
+        const cart = this.$store.state.cart
+        let data = cart.reduce((a,b)=> a+b.qty,0)
+        return data
+      }
         },
         methods:{
             Change(value){

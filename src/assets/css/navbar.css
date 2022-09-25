@@ -30,3 +30,22 @@
 .button{
     border-radius: 15px;
 }
+.fa-regular{
+    font-size: 24px;
+    border-color:#fff ;
+    color: #fff;
+    
+    margin: 0 12px;
+    position: relative;
+}
+.heart-count{
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+    right: -12px;
+    top: -9px;
+}
+.navbar-item:hover{
+    border-radius: 15px;
+    
+}

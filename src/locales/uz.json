@@ -4,7 +4,7 @@
     "news":"Yangiliklar",
     "language":"Tilni o'zgartirish",
     "register":"Ro'yxatdan o'tish",
-    "login":"Kirish",
+  "login":"Kirish",
   "inputname":"Ismingizni kiriting",
   "password":"Parol kiriting",
   "repeatpassword":"Parolni qayta kiriting",
@@ -22,5 +22,13 @@
   "book":"Qabulga yozilish",
   "logout":"Chiqish",
   "Search":"Qidirish...",
-  "search":"Qidirish"
+  "search":"Qidirish",
+  "drug":"Online Dorixona",
+  "expiration":"Amal qilish muddati:",
+  "description":"Ma'lumot",
+  "found":"So'rov bo'yicha topilgan dorilar",
+  "name":"Ismingizni kiriting",
+  "shop":"Xarid qilish",
+  "empty":"Bo'sh",
+  "price":"Narxi"
   }

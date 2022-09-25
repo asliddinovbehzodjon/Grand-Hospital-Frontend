@@ -8,6 +8,16 @@ const routes = [
     component: ()=>import('../views/Main.vue')
   },
   {
+    path: '/drug',
+    name: 'drug',
+    component: ()=>import('../components/Drugs.vue')
+  },
+  {
+    path: '/drug-accept',
+    name: 'drugaccept',
+    component: ()=>import('../components/DrugAccept.vue')
+  },
+  {
     path: '/register',
     name: 'register',
     component: ()=>import('../views/Register.vue')
