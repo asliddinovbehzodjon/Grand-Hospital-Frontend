@@ -23,7 +23,7 @@ export default createStore({
         item.qty--
       }
       else{
-       state.cart.filter(product=> product.id !== id)
+      state.cart = state.cart.filter(product=> product.id !== id)
       }
     },
     AddCart(state,item){
