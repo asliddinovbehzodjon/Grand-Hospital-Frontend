@@ -30,7 +30,7 @@
       
           <div class="navbar-end">
             <div class="navbar-item">
-              <div class="navbar-item has-dropdown is-hoverable">
+              <div class="navbar-item has-dropdown is-hoverable" style="border-radius: 15px;" >
                 <a class="navbar-link">
                   <i class="fa-solid fa-language" style="font-size:20px"></i> &nbsp {{$t('language')}}
                 </a>
@@ -52,13 +52,13 @@
                 {{mycount}}
               </span></i> &nbsp;</router-link>
               <div class="buttons">
-                <router-link to="/register" style="border-radius: 15px;" v-if="!$store.state.isAuthenticated" class="button is-light">
+                <router-link to="/register" style="border-radius: 15px;color:crimson;" v-if="!$store.state.isAuthenticated" class="button is-light">
                   <strong>{{$t('register')}}</strong>
                 </router-link>
-                <router-link to="login" style="border-radius: 15px;"  v-if="!$store.state.isAuthenticated" class="button is-light">
+                <router-link to="login" style="border-radius: 15px;color:crimson;"  v-if="!$store.state.isAuthenticated" class="button is-light">
                  {{$t('login')}}
                 </router-link>
-                <a @click="Logout" style="border-radius: 15px;"  v-if="$store.state.isAuthenticated" class="button is-light">
+                <a @click="Logout" style="border-radius: 15px;color:crimson;"  v-if="$store.state.isAuthenticated" class="button is-light">
                   {{$t('logout')}}
                  </a>
               </div>
