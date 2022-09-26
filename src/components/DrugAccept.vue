@@ -1,7 +1,13 @@
 <template>
     <div class='container mt-5'>
-      
-       <div class="columns is-multiline">
+      <div class="empty-show" v-if="!mycnt">
+        
+            <center class="mt-5">
+             <h3 class="has-text-centered title" style="color:crimson"><i class="fa-solid fa-trash"></i> &nbsp;{{$t('empty')}}</h3>
+            </center>
+         
+      </div>
+       <div class="columns is-multiline" v-else>
         <div class="column is-offset-1 is-4">
             <table class="table">
                 <thead>
@@ -22,12 +28,8 @@
                 </thead>
                 <tbody>
                     
-                    <tr v-if="!mycnt">
-                       <center class="mt-5">
-                        <h3 class="has-text-centered title" style="color:crimson"><i class="fa-solid fa-trash"></i> &nbsp;{{$t('empty')}}</h3>
-                       </center>
-                    </tr>
-                    <tr v-else v-for="drug in drugs">
+                   
+                    <tr  v-for="drug in drugs">
                         <td>
                             <img :src="drug.image" alt="" class="mydrug-image">
                         </td>
