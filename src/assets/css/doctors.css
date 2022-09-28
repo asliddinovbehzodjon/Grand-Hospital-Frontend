@@ -59,6 +59,7 @@
   
   .pagination a:hover:not(.active) {background-color: #ddd;}
 img{
+    height: 120px !important;
     width: 50%;
     margin: 10px auto;
 }

@@ -8,18 +8,19 @@
 }
 
 .loading {
-    position: relative;
+    /* position: relative !important; */
     z-index: 1000;
     background-color: white;
-    height:100%;
-    width: 100%;
+
     text-align: center;
     line-height: 100vh;
   }
   
- .loading .img {
+ .loading .image {
     position: absolute;
-    left: 50%;
-    top: 50%;
+    left: 50% !important;
+    height: 250px!important;
+    width: 250px!important;
+    top: 50% !important;
     transform: translate(-50%,-50%);
   }
